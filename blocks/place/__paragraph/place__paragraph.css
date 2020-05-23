@@ -1,0 +1,11 @@
+.place__paragraph {
+  width: 100%;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  /* or 167% */
+  color: #FFFFFF;
+  margin: 0 0 24px;
+}

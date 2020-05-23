@@ -1,0 +1,71 @@
+@import url(./__title/cover__title.css);
+@import url(./__subtitle/cover__subtitle.css);
+@import url(./__background/cover__background.css);
+@import url(./__overlay/cover__overlay.css);
+.cover {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding-top: 92px;
+}
+
+@media (max-width: 1024px) {
+  .cover {
+    margin: 0;
+  }
+  .cover__background {
+    max-height: 640px;
+    height: 62.5vw;
+  }
+  .cover__overlay {
+    max-height: 640px;
+    height: 62.5vw;
+  }
+}
+
+@media(max-width: 768px) {
+  .cover {
+    padding-top: 88px;
+  }
+  .cover__background {
+    max-height: 480px;
+  }
+  .cover__overlay {
+    max-height: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover__title {
+    font-size: 12vw;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover {
+    padding-top: 64px;
+  }
+  .cover__title {
+    max-width: 270px;
+    min-height: 70px;
+    font-size: 32px;
+    line-height: 1.09;
+    margin-bottom: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .cover__subtitle {
+    max-width: 280px;
+    min-height: 48px;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  .cover__background {
+    min-height: 200px;
+  }
+  .cover__overlay {
+    min-height: 200px;
+  }
+}
