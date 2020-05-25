@@ -1,21 +1,21 @@
 @import url(./__title/intro__title.css);
 @import url(./__text/intro__text.css);
 @import url(./__list/intro__list.css);
-@import url(./../../blocks/font-weight-normal/font-weight-normal.css);
+@import url(./__list-accent/intro__list-accent.css);
 .intro {
   max-width: 690px;
   padding-top: 92px;
   margin: 0 auto 0 11.5625%;
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .intro {
     margin-left: 48px;
     padding-top: 92px;
   }
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .intro {
     margin-left: 24px;
     max-width: calc(100% - 48px);
@@ -24,16 +24,9 @@
   }
 }
 
-@media (max-width: 425px) {
+@media all and (max-width: 425px) {
   .intro {
     max-width: 288px;
     padding-top: 64px;
-  }
-  .intro__title {
-    font-size: 32px;
-    line-height: 1.09;
-  }
-  .intro__text {
-    min-height: 520px;
   }
 }

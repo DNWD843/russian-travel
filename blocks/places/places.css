@@ -4,14 +4,14 @@
   padding-top: 92px;
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .places {
     max-width: 928px;
     margin: 0 48px;
   }
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .places {
     max-width: 720px;
     padding-top: 88px;
@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media all and (max-width: 425px) {
   .places {
     width: 100%;
     padding-top: 64px;

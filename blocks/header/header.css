@@ -2,50 +2,36 @@
 @import url(./__lang-links/header__lang-links.css);
 @import url(./__lang-link/header__lang-link.css);
 @import url(./__lang-link/_active/header__lang-link_active.css);
-@import url(./__lang-link/_no-margin-right/header__lang-link_no-margin-right.css);
 .header {
   width: 93%;
   max-width: 1184px;
-  min-height: 52px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 0;
 }
 
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .header {
     max-width: 928px;
   }
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   .header {
     max-width: 720px;
     width: 93.75%;
   }
 }
 
-@media (max-width: 720px) {
+@media all and (max-width: 720px) {
   .header {
     width: 90%;
   }
 }
 
-@media (max-width: 425px) {
+@media all and (max-width: 425px) {
   .header {
-    min-height: 42px;
     margin-left: 16px;
     margin-right: 16px;
-  }
-  .header__logo {
-    max-width: 142px;
-  }
-  .header__lang-links {
-    margin-bottom: 4px;
-  }
-  .header__lang-link {
-    min-width: 22px;
-    min-height: 24px;
-    font-size: 18px;
   }
 }

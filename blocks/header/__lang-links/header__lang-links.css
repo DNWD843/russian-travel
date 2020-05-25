@@ -6,3 +6,9 @@
   list-style: none;
   padding: 0;
 }
+
+@media all and (max-width: 425px) {
+  .header__lang-links {
+    margin-bottom: 4px;
+  }
+}

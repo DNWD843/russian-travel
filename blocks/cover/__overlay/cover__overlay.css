@@ -1,7 +1,14 @@
 .cover__overlay {
   width: 100%;
-  height: 57.8vw;
+  height: 62.5vw;
+  max-width: 1184px;
   max-height: 740px;
+  /* В ДАННОМ СЛУЧАЕ Я ВЫНУЖДЕН ОГРАНИЧИТЬ МАКС ВЫСОТУ ПРОПОРЦИОНАЛЬНО МАКС ШИРИНЕ ИЗ МАКЕТА,
+	 Т.К. ВЫСОТА cover__overlay ПРОПОРЦИОНАЛЬНА ШИРИНЕ ОКНА ПРОСМОТРА 
+	 (ТАКОЕ РЕШЕНИЕ ЗАВЯЗАТЬ ВЫСОТУ ОВЕРЛЕЯ НА ШИРИНУ ОКНА ПРОСМОТРА ПРИНЯТО ДЛЯ:
+	 - ИСКЛЮЧЕНИЯ АБСОЛЮТНОГО ПОЗИЦИОНИРОВАНИЯ ФОНА ИЛИ ОВЕРЛЕЯ;
+	 - НЕОБХОДИМОСТИ ЗАДАНИЯ ЯВНОЙ ВЫСОТЫ ДЛЯ РАСТЯЖЕНИЯ ОВЕРЛЕЯ И ФОНА ВМЕСТЕ С НИМ ДО ЗНАЧЕНИЙ ИЗ МАКЕТА;
+	 - ОБЕСПЕЧЕНИЯ ОТЗЫВЧИВОСТИ БЛОКА COVER.  */
   position: relative;
   display: flex;
   justify-content: center;
@@ -9,6 +16,8 @@
   flex-direction: column;
   z-index: 2;
   text-decoration: none;
+  background-image: url(./../../../images/cover-trains.jpg);
+  background-size: cover;
 }
 
 
@@ -28,10 +37,9 @@
 }
 
 
-/* легкое затемнение без ховера. Псевдокласс :not(:hover) по замыслу
-должен недопустить наложения двух псевдослоев ) */
+/* легкое затемнение без ховера.  */
 
-.cover__overlay:not(:hover)::before {
+.cover__overlay::after {
   content: '';
   opacity: .3;
   background-color: #2a2c2f;
@@ -41,4 +49,5 @@
   top: 0;
   left: 0;
   z-index: -1;
+  transition: opacity .2s linear;
 }

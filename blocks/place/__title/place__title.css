@@ -8,6 +8,41 @@
   /* or 106% */
   color: #FFFFFF;
   margin: 0;
-  display: grid;
-  align-items: end;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media all and (max-width: 1024px) {
+  .place__title {
+    max-width: 440px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .place__title {
+    font-size: 7.8vw;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .place__title {
+    max-width: 330px;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .place__title {
+    font-size: 8vw;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+    min-width: 288px;
+    margin: 0 auto 32px;
+  }
 }
