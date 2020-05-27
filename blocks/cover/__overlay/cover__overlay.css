@@ -3,18 +3,12 @@
   height: 62.5vw;
   max-width: 1184px;
   max-height: 740px;
-  /* В ДАННОМ СЛУЧАЕ Я ВЫНУЖДЕН ОГРАНИЧИТЬ МАКС ВЫСОТУ ПРОПОРЦИОНАЛЬНО МАКС ШИРИНЕ ИЗ МАКЕТА,
-	 Т.К. ВЫСОТА cover__overlay ПРОПОРЦИОНАЛЬНА ШИРИНЕ ОКНА ПРОСМОТРА 
-	 (ТАКОЕ РЕШЕНИЕ ЗАВЯЗАТЬ ВЫСОТУ ОВЕРЛЕЯ НА ШИРИНУ ОКНА ПРОСМОТРА ПРИНЯТО ДЛЯ:
-	 - ИСКЛЮЧЕНИЯ АБСОЛЮТНОГО ПОЗИЦИОНИРОВАНИЯ ФОНА ИЛИ ОВЕРЛЕЯ;
-	 - НЕОБХОДИМОСТИ ЗАДАНИЯ ЯВНОЙ ВЫСОТЫ ДЛЯ РАСТЯЖЕНИЯ ОВЕРЛЕЯ И ФОНА ВМЕСТЕ С НИМ ДО ЗНАЧЕНИЙ ИЗ МАКЕТА;
-	 - ОБЕСПЕЧЕНИЯ ОТЗЫВЧИВОСТИ БЛОКА COVER.  */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 2;
+  z-index: 1;
   text-decoration: none;
   background-image: url(./../../../images/cover-trains.jpg);
   background-size: cover;
@@ -23,23 +17,15 @@
 
 /* темный фон при ховере */
 
-.cover__overlay:hover::after {
-  content: '';
+.cover__overlay:hover::before {
   opacity: .8;
-  background-color: #2a2c2f;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
   cursor: pointer;
 }
 
 
 /* легкое затемнение без ховера.  */
 
-.cover__overlay::after {
+.cover__overlay::before {
   content: '';
   opacity: .3;
   background-color: #2a2c2f;

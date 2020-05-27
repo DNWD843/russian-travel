@@ -1,4 +1,4 @@
-  .lead__subtitle {
+.lead__subtitle {
   margin: 0 auto 64px;
   max-width: 640px;
   font-family: inherit;
@@ -31,3 +31,8 @@
     line-height: 1.25;
     margin-bottom: 40px;
   }
+}
+
+
+/* Досадное замечание, учитывая, что я неоднократно прошел по всем файлам в поисках 
+забытых скобок. Проморгал. */

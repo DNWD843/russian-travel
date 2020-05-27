@@ -8,8 +8,6 @@
   /* or 106% */
   color: #FFFFFF;
   margin: 0;
-  display: flex;
-  align-items: flex-end;
 }
 
 @media all and (max-width: 1024px) {
